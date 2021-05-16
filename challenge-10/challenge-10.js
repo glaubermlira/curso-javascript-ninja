@@ -1,6 +1,4 @@
 (function(){
-
-
 /*
 Crie uma IIFE que envolva todo esse arquivo (inclusive esse comentário),
 e faça a indentação correta.
@@ -166,29 +164,29 @@ operationSignal = '*';
 var multiplication = calculator(operationSignal);
 if (multiplication) {
   num1 = 30;
-  num2 = 45;
+  num2 = 33.3;
   console.log(showOperationMessage(operationSignal, num1, num2), multiplication (num1, num2));
 }
 else {
   console.log(showErrorMessage (operationSignal));
 }
 
-operationSignal = '+';
+operationSignal = '/';
 var division = calculator(operationSignal)
 if (division) {
-  num1 = 30;
-  num2 = 45;
+  num1 = 31;
+  num2 = 244;
   console.log(showOperationMessage(operationSignal, num1, num2), division (num1, num2));
 }
 else {
   console.log(showErrorMessage (operationSignal));
 }
 
-operationSignal = '+';
+operationSignal = '%';
 var mod = calculator(operationSignal)
 if (mod) {
-  num1 = 30;
-  num2 = 45;
+  num1 = 4;
+  num2 = 2;
   console.log(showOperationMessage(operationSignal, num1, num2), mod (num1, num2));
 }
 else {
@@ -199,6 +197,15 @@ Repita o PASSO 2 novamente, mas passando um operador inválido, para ver se
 a mensagem de erro será mostrada no console.
 */
 operationSignal = '#';
-var sum = calculator(operationSignal)
+var notAllowed = calculator(operationSignal)
+if (notAllowed) {
+  num1 = 4;
+  num2 = 2;
+  console.log(showOperationMessage(operationSignal, num1, num2), notAllowed (num1, num2));
+}
+else {
+  console.log(showErrorMessage (operationSignal));
+}
+})();
 
-})
+
